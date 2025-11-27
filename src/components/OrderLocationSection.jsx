@@ -245,16 +245,12 @@ export default function OrderLocationSection() {
             </div>
 
             {/* Map Placeholder / Additional Info */}
-            <div className="bg-gray-100 rounded-2xl h-64 lg:h-full flex items-center justify-center">
-              <div className="text-center text-gray-500">
-                <MapPin size={48} className="mx-auto mb-4 opacity-50" />
-                <p
-                  className="text-sm tracking-[0.02em]"
-                  style={{ fontFamily: "Outfit, sans-serif" }}
-                >
-                  Interactive map coming soon
-                </p>
-              </div>
+            <div className="bg-gray-100 rounded-2xl h-64 lg:h-full overflow-hidden">
+              <img
+                src="/images/uploaded_image_1.png"
+                alt="Location Map"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </motion.div>

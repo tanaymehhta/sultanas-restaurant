@@ -49,6 +49,15 @@ export default function MenuSection() {
         "https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=600&h=600&fit=crop&crop=center&auto=format&q=80",
       items: ["Cakes", "Tarts", "Macarons", "Seasonal Specialties"],
     },
+    {
+      id: 5,
+      title: "Seasonal Specials",
+      subtitle: "Limited time offerings",
+      description:
+        "Unique creations featuring the season's best ingredients and flavors.",
+      image: "/images/uploaded_image_0.png",
+      items: ["Seasonal Fruit Tarts", "Holiday Breads", "Specialty Drinks", "Festive Cookies"],
+    },
   ];
 
   return (
