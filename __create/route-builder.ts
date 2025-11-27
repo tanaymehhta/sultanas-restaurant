@@ -16,8 +16,9 @@ if (globalThis.fetch) {
 
 // Recursively find all route.js files
 async function findRouteFiles(dir: string): Promise<string[]> {
-  const files = await readdir(dir);
-  let routes: string[] = [];
+  try {
+    const files = await readdir(dir);
+    let routes: string[] = [];
 
   for (const file of files) {
     try {
@@ -40,6 +41,10 @@ async function findRouteFiles(dir: string): Promise<string[]> {
   }
 
   return routes;
+  } catch (error) {
+    // Directory doesn't exist, return empty array
+    return [];
+  }
 }
 
 // Helper function to transform file path to Hono route path
