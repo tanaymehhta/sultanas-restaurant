@@ -54,7 +54,7 @@ function buildRouteTree(dir: string, basePath = ''): Tree {
 			node.children.push(childNode);
 		} else if (file === 'page.jsx') {
 			node.hasPage = true;
-    }
+		}
 	}
 
 	return node;
@@ -117,3 +117,5 @@ const notFound = route('*?', './__create/not-found.tsx');
 const routes = [...generateRoutes(tree), notFound];
 
 export default routes;
+
+// Trigger route rebuild
