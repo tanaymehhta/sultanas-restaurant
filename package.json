@@ -92,6 +92,13 @@
 		"vitest": "^3.2.4"
 	},
 	"overrides": {
-		"next-themes": "^0.3.0"
+		"next-themes": "^0.3.0",
+		"@types/react": "^18.3.1",
+		"@types/react-dom": "^18.3.1",
+		"react-router-hono-server": {
+			"vite": "$vite",
+			"@react-router/dev": "$@react-router/dev",
+			"@types/react": "$@types/react"
+		}
 	}
 }
